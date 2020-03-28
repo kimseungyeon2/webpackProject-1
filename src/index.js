@@ -57,7 +57,6 @@ $(document).ready(function(){
     });
     
     $submit.on('click',function(){
-        console.log("submit");
         for (const index in imgFile.getFile()) {
             let formData = {
                 'lang':$form.find('select').val(),
@@ -67,6 +66,8 @@ $(document).ready(function(){
         }
 
         service.get('');
+        console.log("test");
+        
         
     });
 
